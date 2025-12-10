@@ -1,54 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
 :root {
   --accent: #d787a3;
-  --accent-light: #f3d7e3;
-  --text-dark: #2d2d2d;
-  --text-light: #555;
-  --bg: #fff7fb;
+  --accent-dark: #b26c88;
+  --bg: #fff6fa;
   --card-bg: #ffffff;
-  --border: #f1dbe4;
+  --text: #2a2a2a;
+  --subtext: #6f6f6f;
+  --border: #f5d9e4;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
   margin: 0;
   padding: 0;
-  background: var(--bg);
-  color: var(--text-dark);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
-/* ----------------------------- */
-/* HEADER                        */
-/* ----------------------------- */
+/* HEADER */
 .header {
   text-align: center;
   padding: 3rem 1rem 2rem;
-  background: linear-gradient(to bottom, #ffeef7, #fff7fb);
-  border-bottom: 2px solid var(--border);
+  background: linear-gradient(to bottom, #ffe9f2, #fff6fa);
+  border-bottom: 1px solid var(--border);
 }
 
 .header h1 {
   font-size: 3rem;
-  font-weight: 700;
+  margin: 0;
   color: var(--accent);
-  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .subtitle {
-  color: var(--text-light);
+  color: var(--subtext);
   font-size: 1.1rem;
+  margin-top: 0.5rem;
 }
 
 .name {
-  margin-top: 0.5rem;
   font-size: 1rem;
-  color: var(--accent);
+  margin-top: 0.3rem;
   font-weight: 600;
+  color: var(--accent-dark);
 }
 
-/* ----------------------------- */
-/* MAIN CONTAINER & SECTIONS     */
-/* ----------------------------- */
+/* MAIN */
 .container {
   width: 90%;
   max-width: 900px;
@@ -58,11 +57,11 @@ body {
 .section {
   background: var(--card-bg);
   padding: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   border-radius: 18px;
-  border: 1px solid var(--accent-light);
-  box-shadow: 0 6px 18px rgba(215, 135, 163, 0.15);
-  transition: transform 0.2s ease;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 14px rgba(215, 135, 163, 0.15);
+  transition: 0.25s ease;
 }
 
 .section:hover {
@@ -70,43 +69,39 @@ body {
 }
 
 .section h2 {
-  color: var(--accent);
+  color: var(--accent-dark);
   margin-bottom: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
-/* ----------------------------- */
-/* LINK LISTS                    */
-/* ----------------------------- */
+/* LINKS */
 .link-list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
 .link-list li {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.6rem;
 }
 
 .link-list a {
-  color: var(--accent);
+  color: var(--accent-dark);
   font-weight: 600;
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  transition: 0.2s;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
 }
 
 .link-list a:hover {
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 2px;
+  border-bottom: 2px solid var(--accent-dark);
 }
 
-/* ----------------------------- */
-/* FOOTER                        */
-/* ----------------------------- */
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 2rem;
-  color: var(--text-light);
-  font-size: 0.95rem;
-  border-top: 2px solid var(--accent-light);
+  color: var(--subtext);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
 }
