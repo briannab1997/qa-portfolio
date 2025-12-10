@@ -3,101 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QA Portfolio — Brianna Brockington</title>
+    <title>Brianna Brockington — QA Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header class="header">
-      <h1>QA Portfolio</h1>
-      <p class="subtitle">
-        Manual Testing • API Testing • Bug Reports • QA Documentation
-      </p>
-      <p class="name">by <strong>Brianna Brockington</strong></p>
-    </header>
+    <div id="scrollBar"></div>
 
-    <main class="container">
-      <section class="section">
-        <h2>📘 Overview</h2>
-        <p>
-          Welcome to my Quality Assurance Portfolio. This site contains
-          structured, professional QA artifacts showcasing my skills in test
-          case design, bug reporting, API testing, exploratory testing, and
-          documentation. All work is created using real QA methodologies and
-          tools commonly used in the industry.
+    <nav class="navbar">
+      <div class="logo">QA Portfolio</div>
+
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="themeToggle" class="theme-btn">🌙</button>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Hello, I’m <span class="accent">Brianna</span></h1>
+        <p class="hero-subtitle">
+          QA Analyst • Software Engineering Student • Detail-Driven Tester
         </p>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2>🧪 Test Suites</h2>
-        <ul class="link-list">
-          <li>
-            <a href="test-cases/ecommerce-test-cases.md"
-              >E-Commerce Test Cases</a
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h1 class="section-title">QA Projects</h1>
+
+      <div class="project-grid">
+        <!-- Mobile Testing -->
+        <div class="project-card">
+          <h3>Mobile App Test Suite — Instagram Login</h3>
+          <p>
+            A full mobile QA suite including test cases, bug reports,
+            exploratory notes, and device matrix.
+          </p>
+
+          <div class="project-buttons">
+            <a href="./mobile-tests" class="btn secondary">View Files</a>
+            <a
+              href="https://github.com/briannab1997/qa-portfolio/tree/main/mobile-tests"
+              class="btn primary"
+              >GitHub</a
             >
-          </li>
-          <li>
-            <a href="test-cases/bankingapp-test-cases.md"
-              >Banking App Test Cases</a
+          </div>
+        </div>
+
+        <!-- UI/UX -->
+        <div class="project-card">
+          <h3>Airbnb UI/UX + Accessibility Analysis</h3>
+          <p>
+            A realistic UI/UX evaluation including accessibility findings,
+            interaction audits, visual checks, and structured issues.
+          </p>
+
+          <div class="project-buttons">
+            <a href="./ui-ux-tests" class="btn secondary">View Files</a>
+            <a
+              href="https://github.com/briannab1997/qa-portfolio/tree/main/ui-ux-tests"
+              class="btn primary"
+              >GitHub</a
             >
-          </li>
-          <li>
-            <a href="test-cases/loginapp-test-cases.md">Login App Test Cases</a>
-          </li>
-        </ul>
-      </section>
+          </div>
+        </div>
 
-      <section class="section">
-        <h2>🐞 Bug Reports</h2>
-        <ul class="link-list">
-          <li>
-            <a href="bug-reports/login-bug-report.md"
-              >Login Module Bug Report</a
+        <!-- Automation -->
+        <div class="project-card">
+          <h3>Users API Automation — Smoke Tests</h3>
+          <p>
+            A Node.js automation suite testing CRUD functionality of the Users
+            API. Includes full test plan + results report.
+          </p>
+
+          <div class="project-buttons">
+            <a href="./automation-lite" class="btn secondary">View Files</a>
+            <a
+              href="https://github.com/briannab1997/qa-portfolio/tree/main/automation-lite"
+              class="btn primary"
+              >GitHub</a
             >
-          </li>
-          <li><a href="bug-reports/ui-bug-report.md">UI/UX Bug Report</a></li>
-          <li>
-            <a href="bug-reports/cart-bug-report.md"
-              >Shopping Cart Bug Report</a
-            >
-          </li>
-        </ul>
-      </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2>🔗 API Tests</h2>
-        <ul class="link-list">
-          <li>
-            <a href="api-tests/demo-api-tests.md">ReqRes API Test Suite</a>
-          </li>
-        </ul>
-      </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h1 class="section-title">Contact</h1>
 
-      <section class="section">
-        <h2>📄 Documentation</h2>
-        <ul class="link-list">
-          <li><a href="README.md">Full Portfolio Documentation (README)</a></li>
-        </ul>
-      </section>
+      <p>Email:</p>
+      <a href="mailto:briannab1997@gmail.com" class="email-link"
+        >briannab1997@gmail.com</a
+      >
+    </section>
 
-      <section class="section">
-        <h2>📫 Contact</h2>
-        <p>
-          Email:
-          <a href="mailto:briannab1997@gmail.com">briannab1997@gmail.com</a
-          ><br />
-          GitHub:
-          <a href="https://github.com/briannab1997">github.com/briannab1997</a
-          ><br />
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/brianna-brockington-1b6a59a9/"
-            >LinkedIn Profile</a
-          >
-        </p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© 2025 Brianna Brockington — QA Engineering Portfolio</p>
+    <footer>
+      <p>© 2025 Brianna Brockington • QA Portfolio</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

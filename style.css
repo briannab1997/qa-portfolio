@@ -1,107 +1,180 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
   --accent: #d787a3;
-  --accent-dark: #b26c88;
-  --bg: #fff6fa;
-  --card-bg: #ffffff;
-  --text: #2a2a2a;
-  --subtext: #6f6f6f;
-  --border: #f5d9e4;
+  --accent-light: #f2c9d9;
+  --dark-bg: #121212;
+  --dark-card: #1e1e1e;
+  --dark-text: #f4f4f4;
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  margin: 0;
-  padding: 0;
-  line-height: 1.65;
+  font-family: "Poppins", sans-serif;
+  background: #fff7fb;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* HEADER */
-.header {
-  text-align: center;
-  padding: 3rem 1rem 2rem;
-  background: linear-gradient(to bottom, #ffe9f2, #fff6fa);
-  border-bottom: 1px solid var(--border);
+body.dark {
+  background: var(--dark-bg);
+  color: var(--dark-text);
 }
 
-.header h1 {
-  font-size: 3rem;
-  margin: 0;
-  color: var(--accent);
-  font-weight: 700;
+/* NAV */
+.navbar {
+  width: 100%;
+  padding: 1.2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
 }
 
-.subtitle {
-  color: var(--subtext);
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+body.dark .navbar {
+  background: var(--dark-card);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
 
-.name {
-  font-size: 1rem;
-  margin-top: 0.3rem;
+.logo {
+  font-size: 1.6rem;
   font-weight: 600;
-  color: var(--accent-dark);
+  color: var(--accent);
 }
 
-/* MAIN */
-.container {
-  width: 90%;
-  max-width: 900px;
-  margin: 2.5rem auto;
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
 
-.section {
-  background: var(--card-bg);
-  padding: 2rem;
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+
+/* TOGGLE BUTTON */
+.theme-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background: var(--accent-light);
+  border: none;
+  cursor: pointer;
+}
+
+body.dark .theme-btn {
+  background: #333;
+  color: var(--accent-light);
+}
+
+/* HERO */
+#hero {
+  padding: 9rem 3rem 4rem;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2.8rem;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  color: #555;
+}
+
+body.dark .hero-subtitle {
+  color: #ddd;
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
   margin-bottom: 2rem;
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  box-shadow: 0 4px 14px rgba(215, 135, 163, 0.15);
-  transition: 0.25s ease;
+  color: var(--accent);
 }
 
-.section:hover {
+/* PROJECT CARDS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+body.dark .project-card {
+  background: var(--dark-card);
+}
+
+.project-card:hover {
   transform: translateY(-4px);
 }
 
-.section h2 {
-  color: var(--accent-dark);
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
+.project-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
-/* LINKS */
-.link-list {
-  list-style: none;
-  padding: 0;
-}
-
-.link-list li {
-  margin-bottom: 0.6rem;
-}
-
-.link-list a {
-  color: var(--accent-dark);
+.btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 12px;
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
-  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
 }
 
-.link-list a:hover {
-  border-bottom: 2px solid var(--accent-dark);
+.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.secondary {
+  background: white;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+body.dark .secondary {
+  background: var(--dark-card);
+  color: var(--accent-light);
+  border-color: var(--accent-light);
+}
+
+/* CONTACT */
+#contact {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.email-link {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 /* FOOTER */
-.footer {
-  text-align: center;
+footer {
   padding: 2rem;
-  color: var(--subtext);
-  font-size: 0.9rem;
-  border-top: 1px solid var(--border);
+  text-align: center;
+  opacity: 0.7;
 }
