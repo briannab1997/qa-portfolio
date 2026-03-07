@@ -8,13 +8,17 @@ function toggleMenu() {
 const toggle = document.getElementById("themeToggle");
 const body = document.body;
 
-if (localStorage.getItem("darkMode") === "true") {
-  body.classList.add("dark");
+function applyDarkMode(isDark) {
+  body.classList.toggle("dark", isDark);
+  toggle.textContent = isDark ? "☀️" : "🌙";
 }
 
+applyDarkMode(localStorage.getItem("darkMode") === "true");
+
 toggle.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  localStorage.setItem("darkMode", body.classList.contains("dark"));
+  const isDark = body.classList.contains("dark");
+  applyDarkMode(!isDark);
+  localStorage.setItem("darkMode", !isDark);
 });
 
 /* SCROLL PROGRESS BAR */

@@ -22,45 +22,85 @@
       <div class="logo">QA Portfolio</div>
 
       <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
       <button id="themeToggle" class="theme-btn">🌙</button>
 
-      <div class="hamburger" onclick="toggleMenu()">
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </nav>
 
     <!-- HERO -->
     <section id="hero">
       <div class="hero-content">
-        <h1>Hello, I’m <span class="accent">Brianna</span></h1>
+        <h1>Hello, I'm <span class="accent">Brianna</span></h1>
         <p class="hero-subtitle">
-          QA Analyst • Software Engineering Student • Detail-Driven Tester
+          QA Analyst &nbsp;•&nbsp; Software Engineering Student &nbsp;•&nbsp; Detail-Driven Tester
         </p>
+        <p class="hero-summary">
+          I'm a software engineering student focused on quality assurance. Whether it's writing structured test plans,
+          logging detailed bug reports, or running automated API smoke suites — I care about making software work the
+          way it should and finding problems before users do. This portfolio covers manual testing, API testing,
+          mobile testing, and UI/UX analysis across multiple application types.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Manual Testing</span>
+        <span class="skill-tag">Exploratory Testing</span>
+        <span class="skill-tag">Regression Testing</span>
+        <span class="skill-tag">Smoke Testing</span>
+        <span class="skill-tag">API Testing</span>
+        <span class="skill-tag">Mobile Testing</span>
+        <span class="skill-tag">Accessibility Testing</span>
+        <span class="skill-tag">UI/UX Analysis</span>
+        <span class="skill-tag">Bug Reporting</span>
+        <span class="skill-tag">Test Case Writing</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Fetch API</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">Chrome DevTools</span>
+        <span class="skill-tag">WCAG 2.1 AA</span>
+        <span class="skill-tag">Nielsen's Heuristics</span>
+        <span class="skill-tag">VoiceOver / TalkBack</span>
+        <span class="skill-tag">GitHub</span>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h1 class="section-title">QA Projects</h1>
+      <h2 class="section-title">QA Projects</h2>
 
       <div class="project-grid">
+
         <!-- Mobile Testing -->
         <div class="project-card">
           <h3>Mobile App Test Suite — Instagram Login</h3>
           <p>
-            A full mobile QA suite including test cases, bug reports,
-            exploratory notes, and device matrix.
+            Full mobile QA suite covering test cases, bug reports, exploratory notes, and a device compatibility
+            matrix across iOS and Android.
           </p>
-
+          <div class="project-tags">
+            <span class="project-tag">Mobile</span>
+            <span class="project-tag">iOS</span>
+            <span class="project-tag">Android</span>
+            <span class="project-tag">Exploratory</span>
+          </div>
           <div class="project-buttons">
             <a href="./mobile-tests" class="btn secondary">View Files</a>
             <a
               href="https://github.com/briannab1997/qa-portfolio/tree/main/mobile-tests"
               class="btn primary"
+              target="_blank"
+              rel="noopener"
               >GitHub</a
             >
           </div>
@@ -70,52 +110,147 @@
         <div class="project-card">
           <h3>Airbnb UI/UX + Accessibility Analysis</h3>
           <p>
-            A realistic UI/UX evaluation including accessibility findings,
-            interaction audits, visual checks, and structured issues.
+            A full UI/UX evaluation of Airbnb's search and booking flow using Nielsen's 10 heuristics, WCAG 2.1 AA
+            accessibility standards, and structured usability test cases.
           </p>
-
+          <div class="project-tags">
+            <span class="project-tag">UI/UX</span>
+            <span class="project-tag">Accessibility</span>
+            <span class="project-tag">WCAG 2.1</span>
+            <span class="project-tag">Heuristics</span>
+          </div>
           <div class="project-buttons">
-            <a href="./ui-ux-tests" class="btn secondary">View Files</a>
+            <a href="./ui-ux" class="btn secondary">View Files</a>
             <a
-              href="https://github.com/briannab1997/qa-portfolio/tree/main/ui-ux-tests"
+              href="https://github.com/briannab1997/qa-portfolio/tree/main/ui-ux"
               class="btn primary"
+              target="_blank"
+              rel="noopener"
               >GitHub</a
             >
           </div>
         </div>
 
-        <!-- Automation -->
+        <!-- API Automation -->
         <div class="project-card">
           <h3>Users API Automation — Smoke Tests</h3>
           <p>
-            A Node.js automation suite testing CRUD functionality of the Users
-            API. Includes full test plan + results report.
+            A Node.js automation suite testing full CRUD functionality against the Reqres Users API, plus a
+            structured test plan and detailed results report.
           </p>
-
+          <div class="project-tags">
+            <span class="project-tag">Automation</span>
+            <span class="project-tag">API</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">CRUD</span>
+          </div>
           <div class="project-buttons">
             <a href="./automation-lite" class="btn secondary">View Files</a>
             <a
               href="https://github.com/briannab1997/qa-portfolio/tree/main/automation-lite"
               class="btn primary"
+              target="_blank"
+              rel="noopener"
               >GitHub</a
             >
           </div>
         </div>
+
+        <!-- Bug Reports -->
+        <div class="project-card">
+          <h3>Bug Report Collection — Banking, E-Commerce &amp; Login</h3>
+          <p>
+            Structured bug reports written across three application types. Each report includes reproduction steps,
+            environment details, severity classification, and current resolution status.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Bug Reports</span>
+            <span class="project-tag">Banking</span>
+            <span class="project-tag">E-Commerce</span>
+            <span class="project-tag">Security</span>
+          </div>
+          <div class="project-buttons">
+            <a href="./bug-reports" class="btn secondary">View Files</a>
+            <a
+              href="https://github.com/briannab1997/qa-portfolio/tree/main/bug-reports"
+              class="btn primary"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Test Cases -->
+        <div class="project-card">
+          <h3>Manual Test Cases — Banking, E-Commerce &amp; Login</h3>
+          <p>
+            Detailed test case suites covering happy paths, negative paths, edge cases, and UI/accessibility checks
+            across banking, e-commerce, and login applications.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Test Cases</span>
+            <span class="project-tag">Manual</span>
+            <span class="project-tag">Regression</span>
+            <span class="project-tag">Edge Cases</span>
+          </div>
+          <div class="project-buttons">
+            <a href="./test-cases" class="btn secondary">View Files</a>
+            <a
+              href="https://github.com/briannab1997/qa-portfolio/tree/main/test-cases"
+              class="btn primary"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- API Tests -->
+        <div class="project-card">
+          <h3>API Test Documentation — Banking &amp; E-Commerce</h3>
+          <p>
+            Documented API test scenarios for a banking platform and e-commerce backend. Covers authentication,
+            data integrity, error handling, and HTTP status code validation.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">API Testing</span>
+            <span class="project-tag">Banking</span>
+            <span class="project-tag">E-Commerce</span>
+            <span class="project-tag">REST</span>
+          </div>
+          <div class="project-buttons">
+            <a href="./api-tests" class="btn secondary">View Files</a>
+            <a
+              href="https://github.com/briannab1997/qa-portfolio/tree/main/api-tests"
+              class="btn primary"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
-      <h1 class="section-title">Contact</h1>
-
-      <p>Email:</p>
-      <a href="mailto:briannab1997@gmail.com" class="email-link"
-        >briannab1997@gmail.com</a
-      >
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:briannab1997@gmail.com" class="contact-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          briannab1997@gmail.com
+        </a>
+        <a href="https://github.com/briannab1997" class="contact-link" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          github.com/briannab1997
+        </a>
+      </div>
     </section>
 
     <footer>
-      <p>© 2025 Brianna Brockington • QA Portfolio</p>
+      <p>© 2026 Brianna Brockington &nbsp;•&nbsp; QA Portfolio</p>
     </footer>
 
     <script src="script.js"></script>
