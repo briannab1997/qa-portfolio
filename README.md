@@ -12,6 +12,7 @@ This repository showcases QA skills I developed through software engineering cou
 
 - My ability to write clear test cases
 - Identifying and documenting defects using a Jira-inspired format
+- Product support-style triage notes with customer impact, workaround, suspected owner, and acceptance criteria
 - API testing experience (GET, POST, PUT, PATCH, DELETE)
 - Strong attention to detail and user workflow understanding
 - Professional communication through well-structured documentation
@@ -25,6 +26,7 @@ QA is part of how I approach software development. I like understanding what a s
 ## 🛠️ Tools & Skills Demonstrated
 
 - Jira-style bug tracking
+- Product support triage documentation
 - Postman + REST API testing
 - Swagger
 - Functional, regression, smoke testing
@@ -34,7 +36,11 @@ QA is part of how I approach software development. I like understanding what a s
 
 ## Portfolio Summary
 
-This QA portfolio demonstrates test planning, bug reporting, API validation, regression thinking, and the kind of careful documentation that supports both software engineering and cyber/IT operations work.
+This QA portfolio demonstrates test planning, bug reporting, API validation, regression thinking, and the kind of careful documentation that supports software engineering, product support, and cyber/IT operations work.
+
+## Featured QA Artifacts
+
+- [Product Support Bug Reports](bug-reports/product-support-bug-reports.md) - Two support-focused bug reports with customer impact, reproduction steps, workaround, suspected technical area, and acceptance criteria.
 
 ---
 
